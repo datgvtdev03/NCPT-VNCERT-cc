@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<script>
+			function signup() {			
+				var txtName = document.getElementById("name").value
+				var txtPass = document.getElementById("pass").value
+				var txtReEnterPass = document.getElementById("re-enter").value
+				if ((txtName.length > 0)  && (txtPass.length > 7) && (txtReEnterPass = txtPass)) {
+					alert("Dang ki thanh cong!")	
+				} else {
+					alert("Dang ki that bai!")
+				} 
+
+			}
+
+			function login() {
+				
+
+			}
+		</script>
+
+	</head>
+	<body>
+		<form action = "">	
+			<div>
+				<label>User Name</label>
+				<input type = "text" id = "name">
+			</div>
+			<div>
+				<label>Password</label>
+				<input type = "password" id = "pass">
+			</div>
+			<div>
+				<label>Re-enter Password</label>
+				<input type = "password" id = "re-enter">
+			</div>
+			<button onClick="signup()"> Test </button>
+			<input type = "submit">Login</input>
+			<input type = "submit">Sign Up</input>
+		</form>
+	</body>
+</html>
