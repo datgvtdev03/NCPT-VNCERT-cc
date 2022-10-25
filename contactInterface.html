@@ -2,8 +2,23 @@
 <html>
 	<head>
 		<script>
+			function checkEmailAddress()  {
+			}
+			
 			function sendEmail() {
-				alert("Gui email thanh cong!")	
+				var txtEmail = document.getElementById("email").value
+				var txtName = document.getElementById("name").value
+				var txtPhoneNum = document.getElementById("phoneNumber").value
+				var txtContent = document.getElementById("content").value
+
+				if txtEmail = "" || txtName = "" || txtPhoneNum = "" || txtContent = "" {
+					alert("Khong duoc de trong!")
+				else {
+					if checkEmailAddress()= true {
+						alert("Gui email thanh cong!") 
+					}
+				}
+				} 
 			}
 		</script>
 	<style>
@@ -12,15 +27,15 @@
 	</head>
 	<body>
 		<form>
-			<label>	Email:		</label>
-			<input placeholder="Enter your email">		</input> <br>
-			<label>	Name: 		</label>
-			<input placeholder="Enter your name">		</input> <br>
-			<label>	Phone number: 	</label>
-			<input placeholder="Enter your phone number">	</input> <br>
-			<label> Content: 	</label> 			 <br>
-			<input placeholder="What you want to send">	</input> <br>
-			<button onClick="sendEmail()"> Submit		</button>
+			<label>	Email:							</label>
+			<input placeholder="Enter your email" id="email">		</input> <br>
+			<label>	Name: 							</label>
+			<input placeholder="Enter your name" id="name">			</input> <br>
+			<label>	Phone number: 						</label>
+			<input placeholder="Enter your phone number" id="phoneNumber">	</input> <br>
+			<label> Content: 						</label> <br>
+			<input placeholder="What you want to send" id="content">	</input> <br><br>
+			<button onClick="sendEmail()"> Submit				</button>
 		</form>
 	</body>
 </html>
