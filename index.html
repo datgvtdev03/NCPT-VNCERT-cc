@@ -1,33 +1,75 @@
 <head>
-	<style>
-		body{
-			background: gray;
-			width: 600px;
-			height: 500px;
-			
-		}
-	</style>
-	<script>
-		function search(){
-			alert("Timg kiếm thành công")
-		}
-	</script>
+    <style>
+        body {
+            background: gray;
+            width: 600px;
+            height: 500px;
+        }
+    </style>
+
 </head>
 <html>
-	<body>
-		<form>
-			<label>Tìm kiếm:</label><br>
-			<input type="text" placeholder="Vui lòng nhập..."/>
-			<input type="submit" Onclick="search()"  name="Search"/>
-		</form>
-		<table>
-			<tr>
-				<th>Danh sách người dùng</th>
-			</tr>
-			<tr><td>Họ tên:Giáp Văn Thành Đạt</td></tr>
-			<tr> <td>Số điện thoại:0333230603</td></tr>
-			<tr> <td>Ngày sinh:23/06/2003</td></tr>
-		</table>
-	</body>
+
+<body>
+    <form>
+        <label>Tìm kiếm:</label><br>
+        <input type="text" placeholder="Vui lòng nhập..." id="myInput" />
+        <input type="submit" Onclick="search()" name="Search" />
+    </form>
+    <table id="myTable">
+        <tr>
+            <th>Danh sách người dùng</th>
+        </tr>
+        <tr>
+            <td>Họ tên:Giáp Văn Thành Đạt</td>
+        </tr>
+        <tr>
+            <td>Số điện thoại:0333230603</td>
+        </tr>
+        <tr>
+            <td>Ngày sinh:23/06/2003</td>
+        </tr>
+
+        <tr>
+            <td>Họ tên:Nguyễn Văn Huy</td>
+        </tr>
+        <tr>
+            <td>Số điện thoại:0333230603</td>
+        </tr>
+        <tr>
+            <td>Ngày sinh:23/06/1997</td>
+        </tr>
+
+        <tr>
+            <td>Họ tên:Giáp Thị Lý</td>
+        </tr>
+        <tr>
+            <td>Số điện thoại:0333230603</td>
+        </tr>
+        <tr>
+            <td>Ngày sinh:23/06/1997</td>
+        </tr>
+    </table>
+		<script>
+			function search() {
+					var txtSearch = document.getElementById("myInput");
+					var table = document.getElementById("myTable");
+					var tr = table.getElementsByTagName("tr");
+					var filter = txtSearch.value.toUpperCase();
+					var txtValue;
+					for (i = 0; i < tr.length; i++) {
+							td[0].getElementsByTagName("td")[0];
+							if (td) {
+									txtValue = td.textContent || td.innerText;
+									if (txtValue.toUpperCase().indexOf(filter) > -1) {
+											tr[i].style.display = "";
+									} else {
+											tr[i].style.display = "none";
+									}
+							}
+					}
+			}
+	</script>
+</body>
 
 </html>
