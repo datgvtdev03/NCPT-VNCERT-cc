@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<script>
+			function search(){
+// 				var input, filter, ul, li, a, i, txtValue; 
+// 				input = document.getElementById("myInput");
+// 				filter = input.value.toUpperCase();
+// 				ul = document.getElementById("myUL");
+// 				li = ul.getElementsByTagName("li");
+// 				for (i = 0; i < li.length; i++) {
+// 				a = li[i].getElementsByTagName("a")[0];
+// 				txtValue = a.textContent || a.innerText;
+// 				if (txtValue.toUpperCase().indexOf(filter) > -1) {
+// 					li[i].style.display = "";
+// 				} else {
+// 					li[i].style.display = "none"; 
+// 				}
+			}
+		</script>
+	</head>	
+
+	<body>
+		<form action = "search()">
+			<input type = "text" placeholder = " Tìm kiếm ">
+			<input type = "submit" value = "Tìm kiếm">
+			<button onClick = "search()">Search</button> 
+		</form>
+		
+		<table>
+			<tr>
+				<div>
+					<img src = "anhdaidienbaiviet.jpeg"/>
+					<p>
+						Giá xăng đang giảm mọi người xếp hàng đổ xăng
+					</p>
+				</div>
+
+			</tr>
+			
+			<tr>
+                                <div>
+                                        <img src = "anhdaidienbaiviet.jpeg"/>
+                                        <p>
+                                                Giá xăng đang giảm mọi người xếp hàng đổ xăng
+                                        </p>
+                                </div>
+                        </tr>
+		</table>
+		
+		
+		<ul id="myUL">
+  			 <li><a href="#">Bao moi</a></li>
+  			 <li><a href="#">Tin nong</a></li>
+
+ 			 <li><a href="#">The thao</a></li>
+ 			 <li><a href="#">VTV1</a></li>
+
+ 			 <li><a href="#">VTV3</a></li>
+ 			 <li><a href="#">VTV5</a></li>
+ 			 <li><a href="#">VTV6</a></li>
+		</ul>
+		
+	</body>
+</html>
