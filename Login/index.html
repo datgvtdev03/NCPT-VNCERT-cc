@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title>Login</title>
+	<head>
+	<body>
+		<form>
+			<label>Username</label>
+			<input class="name" type="text" placeholder="Vui lòng nhập tên tài khoản"><br>
+
+			<label>Password</label>
+			<input class="pass" type="password" placeholder="Vui lòng nhập mật khẩu"><br>
+
+			<input class="login" type="submit">Login</input><br>
+			<p>No register? <a href="">Create a new account</a></p>
+		</form>
+	</body>
+	<script>
+		const userName = document.querySelector(".name")
+		const passWord = document.querySelector(".pass")
+		const btn_submit = document.querySelector(".login")
+
+		var name = "admin"
+		var pass = "12345678"
+
+		btn_submit.onclick = (i) => {
+    		i.preventDefault();
+    		if(userName.value=="") {
+        		alert("Bạn phải nhập tên")
+        		return false
+    		}
+    		if(passWord.value=="") {
+        		alert("Bạn phải nhập mật khẩu")
+        		return false
+    		}
+    		if(userName.value != name && passWord.value != pass) {
+        		alert("Bạn nhập sai tên hoặc mật khẩu")
+        		return false
+    		} else {
+        		alert("Đăng nhập thành công")
+        		return true
+ 	   	}
+	}
+			
+	</script>
+</html>
+
+
+
+ 
